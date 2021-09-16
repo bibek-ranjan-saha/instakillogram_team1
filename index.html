@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      If you are serving your web app in a path other than the root, change the
+      href value below to reflect the base path you are serving from.
+
+      The path provided below has to start and end with a slash "/" in order for
+      it to work correctly.
+
+      For more details:
+      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    -->
+<!--      <base href="/">-->
+
+    <base href="https://bibek-ranjan-saha.github.io/flutter_web/">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="instakilogram">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <title>instakilogram</title>
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+<!--  new new style-->
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #FF7777;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  height: 100px;
+}
+
+h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: 'Titan One', cursive;
+  font-size: 80px;
+  color: #FFF;
+  text-shadow: 0 1px 0 #CCC,
+               0 2px 0 #CCC,
+               0 3px 0 #CCC,
+               0 4px 0 #CCC,
+               0 5px 0 #CCC,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .4);
+}
+
+h1 span:nth-child(2) { animation-delay: .1s; }
+h1 span:nth-child(3) { animation-delay: .2s; }
+h1 span:nth-child(4) { animation-delay: .3s; }
+h1 span:nth-child(5) { animation-delay: .4s; }
+h1 span:nth-child(6) { animation-delay: .5s; }
+h1 span:nth-child(7) { animation-delay: .6s; }
+h1 span:nth-child(8) { animation-delay: .7s; }
+h1 span:nth-child(9) { animation-delay: .8s; }
+h1 span:nth-child(10) { animation-delay: .9s; }
+h1 span:nth-child(11) { animation-delay: 1s; }
+h1 span:nth-child(12) { animation-delay: .1s; }
+h1 span:nth-child(13) { animation-delay: .2s; }
+h1 span:nth-child(14) { animation-delay: .3s; }
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2);
+  }
+}
+
+
+
+<!--for another loading-->
+<!--  .load-2 {-->
+<!--      display: flex;-->
+<!--      justify-content: center;-->
+<!--      align-items: center;-->
+<!--      margin: 0;-->
+<!--      position: absolute;-->
+<!--      top: 50%;-->
+<!--      left: 50%;-->
+<!--      -ms-transform: translate(-50%, -50%);-->
+<!--      transform: translate(-50%, -50%);-->
+<!--}-->
+
+<!--.line {-->
+<!--  display: inline-block;-->
+<!--  width: 15px;-->
+<!--  height: 15px;-->
+<!--  border-radius: 15px;-->
+<!--  background-color: #4b9cdb;-->
+<!--}-->
+<!--.load-2 .line:nth-last-child(1) {-->
+<!--  animation: loadingB 1.5s 1s infinite;-->
+<!--}-->
+<!--.load-2 .line:nth-last-child(2) {-->
+<!--  animation: loadingB 1.5s 0.5s infinite;-->
+<!--}-->
+<!--.load-2 .line:nth-last-child(3) {-->
+<!--  animation: loadingB 1.5s 0s infinite;-->
+<!--}-->
+<!--.l-2 {-->
+<!--  animation-delay: 0.6s;-->
+<!--}-->
+
+<!--@keyframes loadingB {-->
+<!--  0 {-->
+<!--    width: 15px;-->
+<!--  }-->
+<!--  50% {-->
+<!--    width: 35px;-->
+<!--  }-->
+<!--  100% {-->
+<!--    width: 15px;-->
+<!--  }-->
+<!--}-->
+
+<!--sample loading-->
+<!--  body {background-color: #212121;}-->
+
+<!--    .loading {-->
+<!--      display: flex;-->
+<!--      justify-content: center;-->
+<!--      align-items: center;-->
+<!--      margin: 0;-->
+<!--      position: absolute;-->
+<!--      top: 50%;-->
+<!--      left: 50%;-->
+<!--      -ms-transform: translate(-50%, -50%);-->
+<!--      transform: translate(-50%, -50%);-->
+<!--    }-->
+
+<!--    .loader {-->
+<!--      border: 16px solid #f3f3f3;-->
+<!--      border-radius: 50%;-->
+<!--      border: 15px solid;-->
+<!--      border-top: 16px solid #FFFFFF;-->
+<!--      border-right: 16px solid #212121;-->
+<!--      border-bottom: 16px solid #FFFFFF;-->
+<!--      border-left: 16px solid #212121;-->
+<!--      width: 120px;-->
+<!--      height: 120px;-->
+<!--      -webkit-animation: spin 2s linear infinite;-->
+<!--      animation: spin 2s linear infinite;-->
+<!--    }-->
+
+<!--    @-webkit-keyframes spin {-->
+<!--      0% {-->
+<!--        -webkit-transform: rotate(0deg);-->
+<!--      }-->
+<!--      100% {-->
+<!--        -webkit-transform: rotate(360deg);-->
+<!--      }-->
+<!--    }-->
+
+<!--    @keyframes spin {-->
+<!--      0% {-->
+<!--        transform: rotate(0deg);-->
+<!--      }-->
+<!--      100% {-->
+<!--        transform: rotate(360deg);-->
+<!--      }-->
+<!--    }-->
+
+    </style>
+</head>
+<body>
+
+<!--new new style-->
+<h1>
+    <span>i</span>
+    <span>n</span>
+    <span>s</span>
+    <span>t</span>
+    <span>a</span>
+    <span>g</span>
+    <span>r</span>
+    <span>a</span>
+    <span>m</span>
+    <span>-</span>
+    <span>c</span>
+    <span>l</span>
+    <span>o</span>
+    <span>n</span>
+    <span>e</span>
+</h1>
+
+
+<!--for new loading-->
+<!--  <div class="load-2">-->
+<!--    <div class="line"></div>-->
+<!--    <div class="line"></div>-->
+<!--    <div class="line"></div>-->
+<!--  </div>-->
+
+<!--sample loading-->
+<!--<div class="loading">-->
+<!--  <div class="loader"></div>-->
+<!--</div>-->
+<script src="main.dart.js" type="application/javascript"></script>
+<!-- This script installs service_worker.js to provide PWA functionality to
+     application. For more information, see:
+     https://developers.google.com/web/fundamentals/primers/service-workers -->
+<script>
+    var serviceWorkerVersion = '4275412995';
+    var scriptLoaded = false;
+    function loadMainDartJs() {
+      if (scriptLoaded) {
+        return;
+      }
+      scriptLoaded = true;
+      var scriptTag = document.createElement('script');
+      scriptTag.src = 'main.dart.js';
+      scriptTag.type = 'application/javascript';
+      document.body.append(scriptTag);
+    }
+
+    if ('serviceWorker' in navigator) {
+      // Service workers are supported. Use them.
+      window.addEventListener('load', function () {
+        // Wait for registration to finish before dropping the <script> tag.
+        // Otherwise, the browser will load the script multiple times,
+        // potentially different versions.
+        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+        navigator.serviceWorker.register(serviceWorkerUrl)
+          .then((reg) => {
+            function waitForActivation(serviceWorker) {
+              serviceWorker.addEventListener('statechange', () => {
+                if (serviceWorker.state == 'activated') {
+                  console.log('Installed new service worker.');
+                  loadMainDartJs();
+                }
+              });
+            }
+            if (!reg.active && (reg.installing || reg.waiting)) {
+              // No active web worker and we have installed or are installing
+              // one for the first time. Simply wait for it to activate.
+              waitForActivation(reg.installing ?? reg.waiting);
+            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
+              // When the app updates the serviceWorkerVersion changes, so we
+              // need to ask the service worker to update.
+              console.log('New service worker available.');
+              reg.update();
+              waitForActivation(reg.installing);
+            } else {
+              // Existing service worker is still good.
+              console.log('Loading app from service worker.');
+              loadMainDartJs();
+            }
+          });
+
+        // If service worker doesn't succeed in a reasonable amount of time,
+        // fallback to plaint <script> tag.
+        setTimeout(() => {
+          if (!scriptLoaded) {
+            console.warn(
+              'Failed to load app from service worker. Falling back to plain <script> tag.',
+            );
+            loadMainDartJs();
+          }
+        }, 4000);
+      });
+    } else {
+      // Service workers not supported. Just drop the <script> tag.
+      loadMainDartJs();
+    }
+
+</script>
+</body>
+</html>
